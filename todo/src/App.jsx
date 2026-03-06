@@ -16,12 +16,20 @@ import Parent from './Parent';
 import Child from './Child';
 import List from './List';
 import Ron from './ron';
+import Box from './Box';
+import Jon from './jon';
+import Runi from './runi';
+import Apix from './Don';
+import Rout from './Routes';
+import Test from './trying';
+import Routis from './Routes';
+
 
 
 function App() {
     return (
         <div>
-            <Ron/>
+            <Routis/>
         </div>
     )
 }

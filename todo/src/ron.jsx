@@ -6,11 +6,11 @@ const Ron = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/users")
+    fetch("https://jsonplaceholder.typicode.com/")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data.users);
-        console.log(data)
+        console.log(data.users)
         setLoading(false);
       })
       .catch((err) => {
@@ -37,11 +37,11 @@ const Ron = () => {
               backgroundColor: "#f7f7f7"
             }}
           >
-            <p><strong>{user.firstName}</strong></p>
-            <p><strong>{user.lastName}</strong></p>
+            <p><strong>{user.name}</strong></p>
+            <p><strong>{user.email}</strong></p>
             <p><strong>{user.phone}</strong></p>
-            <p><strong>{user.address.state}</strong></p>
-            <p><strong>{user.address.country}</strong></p>
+            <p><strong>{user.address.city}</strong></p>
+            <p><strong>{user.address.zipcode}</strong></p>
             <p><strong>{user.gender}</strong></p>
 
 

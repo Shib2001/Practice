@@ -6,13 +6,13 @@ const Container = () => {
     const [box1Color, setBox1Color] = useState('#3498db');
     const [count, setCount] = useState(0)
 
-    let handlecountincrease = () =>{
-        setCount(count+1);
+    function handlecountincrease(){
+        setCount(++count);
         
     }
 
-    let handlecountdecrease=()=>{
-        setCount(count-1);
+    function handlecountdecrease(){
+        setCount(--count);
     }
 
     // Container wrapper style
@@ -48,8 +48,8 @@ const Container = () => {
         <button onClick={()=>setBox1Color('#000000')}>Click to change the color of  Box 1 </button>
         <div>
             <h1>{count}</h1>
-            <button onClick={()=>handlecountincrease}>Click to increase</button>
-            <button onClick={()=>handlecountdecrease}>Click to Decrease</button>
+            <button onClick={handlecountincrease}>Click to increase</button>
+            <button onClick={handlecountdecrease}>Click to Decrease</button>
         </div>
         </>
         

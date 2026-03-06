@@ -18,6 +18,7 @@ const Sonic = () => {
       });
   }, []);
 
+
   if (loading) {
     return <p>...Loading</p>;
   }
@@ -32,7 +33,7 @@ const Sonic = () => {
             padding: "12px",
             marginBottom: "10px",
             borderRadius: "6px",
-            backgroundColor: "#f7f7f7",
+            backgroundColor: "#f7f7f7"
           }}
         >
             <p>
